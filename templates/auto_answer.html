@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Автоматический ответ{% endblock %}
+
+{% block content %}
+<h2>Спасибо за заполнение анкеты!</h2>
+<p>Вот Ваши данные:</p>
+<div class="data-container">
+    <dl>
+        <dt>Название:</dt><dd>{{ title }}</dd>
+        <dt>Фамилия:</dt><dd>{{ surname }}</dd>
+        <dt>Имя:</dt><dd>{{ name }}</dd>
+        <dt>Образование:</dt><dd>{{ education }}</dd>
+        <dt>Профессия:</dt><dd>{{ profession }}</dd>
+        <dt>Пол:</dt><dd>{{ sex }}</dd>
+        <dt>Мотивация:</dt><dd>{{ motivation }}</dd>
+        <dt>Готовность:</dt><dd>{{ ready }}</dd>
+    </dl>
+</div>
+{% endblock %}
