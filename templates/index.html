@@ -1,0 +1,41 @@
+<!-- Файл index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+</head>
+<body>
+    <form action="/answer" method="post">
+        <label for="title">Название:</label>
+        <input type="text" id="title" name="title"><br><br>
+
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname"><br><br>
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="education">Образование:</label>
+        <input type="text" id="education" name="education"><br><br>
+
+        <label for="profession">Профессия:</label>
+        <input type="text" id="profession" name="profession"><br><br>
+
+        <label for="sex">Пол:</label>
+        <select id="sex" name="sex">
+            <option value="">Выберите</option>
+            <option value="Мужской">Мужской</option>
+            <option value="Женский">Женский</option>
+        </select><br><br>
+
+        <label for="motivation">Мотивация:</label>
+        <textarea id="motivation" name="motivation"></textarea><br><br>
+
+        <label for="ready">Готовность:</label>
+        <input type="checkbox" id="ready" name="ready" value="Да"> Да<br><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
